@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31613.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillsTracker", "SkillsTracker\SkillsTracker.csproj", "{16EFF63B-2D64-4E77-B371-ED35BA7AE326}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{16EFF63B-2D64-4E77-B371-ED35BA7AE326}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16EFF63B-2D64-4E77-B371-ED35BA7AE326}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16EFF63B-2D64-4E77-B371-ED35BA7AE326}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16EFF63B-2D64-4E77-B371-ED35BA7AE326}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BED2D021-2918-464D-89AF-AD5E45AFECA7}
+	EndGlobalSection
+EndGlobal

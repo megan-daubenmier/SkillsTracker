@@ -23,7 +23,7 @@ namespace SkillsTracker.Controllers
         [HttpGet]
         public IActionResult Form()
         {
-            string form = "<form method='post' action='form'>"
+            string form = "<form method='post' action='progress'>"
                 + "<label for='date'>Date:<br></label>"
                 + "<input type='date' name='date' value='mm/dd/yyyy'>"
                 + "<br><label for='cSharpLevel'>C#:<br></label>"
@@ -50,8 +50,8 @@ namespace SkillsTracker.Controllers
 
         }
 
-        [HttpPost("skills/form")]
-        public IActionResult Submit(string date, string cSharpLevel, string javaScriptLevel, string pythonLevel)
+        [HttpPost("skills/progress")]
+        /*public IActionResult Submit(string date, string cSharpLevel, string javaScriptLevel, string pythonLevel)
         {
             string html = "<h1>" + date + "</h1>"
                 + "<h2>Coding languages to learn:</h2>"
@@ -60,6 +60,16 @@ namespace SkillsTracker.Controllers
                 + "<li>JavaScript: " + javaScriptLevel + "</li>"
                 + "<li>Python: " + pythonLevel + "</li>"
                 + "</ol>";
+            return Content(html, "text/html");
+        }*/
+
+        public IActionResult SubmitTable(string date, string cSharpLevel, string javaScriptLevel, string pythonLevel)
+        {
+            string html = "<table><tr><th>" + date + "</th></tr>"
+                + "<tr><td>C#:</td><td>" + cSharpLevel + "</td></tr>"
+                + "<tr><td>JavaScript:</td><td>" + javaScriptLevel + "</td></tr>"
+                + "<tr><td>Python:</td><td>" + pythonLevel + "</td></tr>"
+                + "</table>";
             return Content(html, "text/html");
         }
     }
